@@ -14,7 +14,7 @@ public class DBConnect {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			
 			//Connection
-			con = DriverManager.getConnection("jdbc:mysql://172.19.255.114:3306/database?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC","lv0","lK09347DP190018");	
+			con = DriverManager.getConnection("jdbc:mysql://172.19.255.114:3306/database?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC","lv0","*****************");	
 			st = con.createStatement();	
 		}
 		catch(Exception ex) {
@@ -26,7 +26,7 @@ public class DBConnect {
 	
 	public void getAllClient(){
 		try {
-			//SQL requête
+			//SQL requÃªte
 			String query = "select * From client";
 			rs = st.executeQuery(query);
 
